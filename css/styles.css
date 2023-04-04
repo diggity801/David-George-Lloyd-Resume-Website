@@ -148,3 +148,19 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.sidebar-image {
+  height: 200px; /* Adjust the height value based on your preference */
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar-image img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
