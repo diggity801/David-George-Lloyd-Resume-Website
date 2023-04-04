@@ -38,6 +38,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .fixed-sidebar {
@@ -50,6 +51,12 @@ h2 {
   padding: 20px;
   box-sizing: border-box;
   z-index: 1;
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .main-content {
@@ -108,20 +115,8 @@ h2 {
   text-align: center;
 }
 
-.fixed-sidebar {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  width: 15%;
-  height: 100%;
-  background-color: #f8f9fa;
-  padding: 20px;
-  box-sizing: border-box;
-  z-index: 1;
-}
-
 .fixed-sidebar a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
 }
 
@@ -129,13 +124,8 @@ h2 {
   text-decoration: underline;
 }
 
-.main-content {
-  margin-left: 20%;
-  margin-top: 70px;
-}
-
 .banner-image {
-  height: calc(100vh - 250px); /* Adjust the height value based on your preference */
+  height: 55vh;
   overflow: hidden;
   position: relative;
 }
@@ -150,10 +140,13 @@ h2 {
 }
 
 .sidebar-image {
-  height: 200px; /* Adjust the height value based on your preference */
+  height: 200px;
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-image img {
@@ -163,4 +156,19 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.fixed-sidebar p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.fixed-sidebar p a {
+  color: #333;
+  text-decoration: none;
+}
+
+.fixed-sidebar p a:hover {
+  text-decoration: underline;
 }
